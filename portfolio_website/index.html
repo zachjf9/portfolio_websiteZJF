@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
     <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +11,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Portfolio</title>
+    <title>Zach Falzone | Portfolio</title>
 
 </head>
 
@@ -21,7 +19,7 @@
     <!-- navbar -->
     <nav>
         <div class = "left">
-            <a href="/">Zach Falzone</a>
+            <a href="#top">Zach Falzone</a>
         </div>
 
         <div class = "right">
@@ -35,22 +33,23 @@
                     <span>LinkedIn</span>
             </a>
 
-            <a href = "mailto:john@example.com" target = "_blank" rel = "noopener noreferrer">
+            <a href = "mailto:john@example.com">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Email</span>
             </a>
-
+        </div>
     </nav>
 
-    <main>
+    <main id="top">
 
         <!-- hero section -->
-        <section class="hero-section ">
+        <section class="hero-section">
             <div class="text">
-                <h2>Hi I'm Zach!</h2>
+                <p class="eyebrow">Computer Science Student</p>
+                <h1>Hi, I'm Zach Falzone.</h1>
                 <p>
                     Motivated and detail-oriented Computer Science student 
-                    with hands on experience in Python, Java, SQL, and front-end development. 
+                    with hands-on experience in Python, SQL, and front-end development.
                     Skilled in building responsive interfaces and working with data-driven applications. 
                     Eager to contribute to real-world projects, grow within a development team, 
                     and deepen understanding of the full software lifecycle.
@@ -59,34 +58,131 @@
                 <div class="links">
                     <a href="#skills">
                         <i class="fa-solid fa-code"></i>
-                    <span>Skills</span>
-                </a>
+                        <span>Skills</span>
+                    </a>
 
-                <a href="#testimony">
-                    <i class="fa-solid fa-pen"></i>
-                <span>Testimony</span>
-                </a>
+                    <a href="#projects">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Projects</span>
+                    </a>
 
-                <a href="#Contact">
-                    <i class="fa-solid fa-envelope"></i>
-                <span>Contact</span>
-                </a>
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
                 </div>
             </div>
 
             <div class="headshot">
-                <img src="images/hero-headshot.webp" alt="John Doe">
+                <img src="images/hero-headshot.webp" alt="Zach">
             </div>
         </section>
 
         <!-- skills section -->
-        <section id="skills"></section>
+        <section id="skills" class="section skills-section">
+            <div class="section-heading">
+                <p class="eyebrow">Toolkit</p>
+                <h2>Skills</h2>
+                <p>I enjoy building clean interfaces, solving practical data problems, and turning ideas into useful software.</p>
+            </div>
 
-        <!-- testimony section -->
-        <section id="testimony"></section>
+            <div class="cells">
+                <div class="cell">
+                    <i class="fa-brands fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="cell">
+                    <i class="fa-solid fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="cell">
+                    <img src="images/html-logo.webp" alt="HTML logo">
+                    <span>HTML</span>
+                </div>
+                <div class="cell">
+                    <img src="images/css-logo.webp" alt="CSS logo">
+                    <span>CSS</span>
+                </div>
+                <div class="cell">
+                    <img src="images/javascript-logo.webp" alt="JavaScript logo">
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Projects</h2>
+                <p>A snapshot of the kind of work I am focused on: responsive web pages, data-backed tools, and practical user experiences.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Data Dashboard</h3>
+                    <p>Interactive reporting concept using structured data, clear visual hierarchy, and concise summary metrics.</p>
+                    <div class="tags">
+                        <span>SQL</span>
+                        <span>Python</span>
+                        <span>Charts</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>Responsive Portfolio</h3>
+                    <p>A fast personal site built with semantic HTML and modern CSS, designed to read well on every screen size.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>UX</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>Database Tools</h3>
+                    <p>Practice projects focused on querying, organizing, and presenting information in ways people can act on.</p>
+                    <div class="tags">
+                        <span>SQL</span>
+                        <span>Data</span>
+                        <span>Logic</span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
         <!-- contact section -->
-        <section id="contact"></section>
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h2>Let's connect</h2>
+                <p>Interested in internship opportunities, junior developer roles, and projects where I can contribute and keep growing.</p>
+            </div>
+
+            <div class="contact-actions">
+                <a href="mailto:john@example.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email Zach</span>
+                </a>
+                <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    <span>View GitHub</span>
+                </a>
+                <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </section>
 
     </main>
 </body>
